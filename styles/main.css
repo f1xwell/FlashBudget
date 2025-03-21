@@ -1,0 +1,43 @@
+:root {
+  /* Background */
+  --primaryBackground: #0c4843;
+  --secondaryBackground: #195c56;
+
+  /* Color */
+  --primaryText: white;
+}
+
+/* Start CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--primaryText);
+}
+
+.container {
+  min-height: 100vh;
+  background-color: var(--primaryBackground);
+}
+
+/* Navigation CSS */
+nav {
+  padding: 0.8rem;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: large;
+}
+
+.profile img {
+  width: 50px;
+  border-radius: 50%;
+}
