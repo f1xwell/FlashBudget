@@ -1,10 +1,10 @@
 :root {
   /* Background */
-  --primaryBackground: #0c4843;
+  --primaryBackground: #fff;
   --secondaryBackground: #195c56;
 
   /* Color */
-  --primaryText: white;
+  --primaryText: #53cfc5;
 }
 
 /* Start CSS */
@@ -27,7 +27,7 @@ body {
 /* Navigation CSS */
 nav {
   padding: 0.8rem;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #36bcb1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,27 @@ nav {
   font-size: large;
 }
 
-.profile img {
-  width: 50px;
-  border-radius: 50%;
+ul {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    padding: 2rem;
+    justify-content: space-around;
+  }
+
+  .logo {
+    cursor: pointer;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+
+  ul li {
+    cursor: pointer;
+  }
 }
