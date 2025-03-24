@@ -26,7 +26,7 @@ body {
 
 /* Navigation CSS */
 nav {
-  padding: 0.8rem;
+  padding: 2rem;
   border-bottom: 2px solid #36bcb1;
   display: flex;
   justify-content: space-between;
@@ -35,29 +35,4 @@ nav {
 
 .logo {
   font-size: large;
-}
-
-ul {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
-  nav {
-    padding: 2rem;
-    justify-content: space-around;
-  }
-
-  .logo {
-    cursor: pointer;
-  }
-
-  ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-  }
-
-  ul li {
-    cursor: pointer;
-  }
 }
