@@ -60,7 +60,38 @@ body {
     background-color: #36bcb1;
     color: white;
     border-radius: 0.5rem;
-    transition: all 300ms ease-in-out;
+    transition: all 500ms ease-in-out;
+  }
+
+  .content {
+    padding: 2rem 10rem;
+    min-height: 87.3vh;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content h1 {
+    font-size: 70px;
+  }
+
+  button {
+    font-size: x-large;
+    width: fit-content;
+    padding: 1rem 5rem;
+    border-radius: 10px;
+    border: 1px solid #53cfc5;
+    background-color: #53cfc5;
+    color: white;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: white;
+    color: #53cfc5;
+    border: 1px solid;
+    transition: all 500ms ease-in-out;
   }
 }
 
