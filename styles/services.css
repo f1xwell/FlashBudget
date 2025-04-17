@@ -1,12 +1,3 @@
-:root {
-  /* Background */
-  --primaryBackground: #fff;
-  --secondaryBackground: #195c56;
-
-  /* Color */
-  --primaryText: #53cfc5;
-}
-
 /* Start CSS */
 * {
   margin: 0;
@@ -16,11 +7,13 @@
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--primaryText);
 }
 
 @media only screen and (min-width: 1200px) {
   .container {
     min-height: 100vh;
+    background-color: var(--primaryBackground);
   }
 
   /* Disabled Mobile Alert Ui */
@@ -62,38 +55,19 @@ body {
 
   ul li a:hover {
     color: white;
+    border-radius: 0.5rem;
     transition: all 500ms ease-in-out;
   }
 
-  .content {
-    padding: 2rem 10rem;
-    min-height: 85vh;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
+  .contentContainer {
+    padding: 2rem 5rem;
   }
 
-  .content h1 {
-    font-size: 70px;
-  }
-
-  button {
-    font-size: x-large;
-    width: fit-content;
-    padding: 1rem 5rem;
-    border-radius: 10px;
-    border: 1px solid greenyellow;
+  .displayContent {
+    border-radius: 30px;
     background-color: greenyellow;
-    color: white;
-    cursor: pointer;
-  }
-
-  button:hover {
-    background-color: greenyellow;
-    color: black;
-    border: 1px solid;
-    transition: all 500ms ease-in-out;
+    width: 100%;
+    height: 75vh;
   }
 }
 
