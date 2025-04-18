@@ -31,13 +31,14 @@
             <form action="">
               <div class="date">
                 <label for="date">Tanggal:</label>
-                <input type="date" />
+                <input type="date" id="date" />
               </div>
               <div class="detailInformation">
                 <label for="detailInformation">Keterangan:</label>
                 <input
                   type="text"
                   placeholder="Enter ur details money used here..."
+                  id="detailInformation"
                 />
               </div>
               <div class="typeOfCashFlow">
@@ -49,10 +50,10 @@
               </div>
               <div class="total">
                 <label for="total">Jumlah:</label>
-                <input type="number" />
+                <input type="number" id="currencyAddTotal" />
               </div>
               <div class="buttonAction">
-                <button>Tambah Transaksi</button>
+                <button id="addTransaction">Tambah Transaksi</button>
               </div>
             </form>
           </div>
@@ -61,10 +62,10 @@
           <div class="contentCurrency">
             <div class="currencyInformation">
               <p>Saldo Anda</p>
-              <h1>Rp 1.000.000</h1>
+              <h1 id="currencyInformation">Rp 0</h1>
             </div>
             <div class="detailInformation">
-              <p>Date</p>
+              <p id="dateInformation"></p>
             </div>
           </div>
         </div>
@@ -73,6 +74,11 @@
         <div class="blockHorizontal"></div>
         <div class="tableContainer">
           <h1>Data Keuangan Anda</h1>
+          <div class="allButtonBox">
+            <button id="deleteDataButton">Hapus Semua Data</button>
+            <button id="printDataButton">Cetak Laporan PDF</button>
+            <button id="deleteLastData">Hapus Data Terakhir</button>
+          </div>
           <table>
             <thead>
               <tr>

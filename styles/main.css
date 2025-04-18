@@ -33,6 +33,7 @@ body {
     padding: 2rem;
     background-color: greenyellow;
     display: flex;
+    border-bottom: 5px solid;
     justify-content: space-around;
     align-items: center;
   }
