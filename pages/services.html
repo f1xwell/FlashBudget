@@ -22,11 +22,45 @@
         </ul>
       </nav>
       <div class="contentContainer">
-        <div class="displayContent">
-          <div class="formBudget"></div>
-          <div class="informationBudget"></div>
+        <div class="formBudget">
+          <div class="headerForm">
+            <h1>Your Financial Solution!</h1>
+            <p>Enter your details to try it...</p>
+          </div>
+          <div class="inputAllData">
+            <form action="">
+              <div class="date">
+                <label for="date">Tanggal:</label>
+                <input type="date" />
+              </div>
+              <div class="detailInformation">
+                <label for="detailInformation">Keterangan:</label>
+                <input
+                  type="text"
+                  placeholder="Enter ur details money used here..."
+                />
+              </div>
+              <div class="typeOfCashFlow">
+                <label for="typeCashFlow">Tipe Aruskas:</label>
+                <select id="typeCashFlow" name="typeCashFlow">
+                  <option value="pengeluaran">Pengeluaran</option>
+                  <option value="pemasukan">Pemasukan</option>
+                </select>
+              </div>
+              <div class="total">
+                <label for="total">Jumlah:</label>
+                <input type="number" />
+              </div>
+              <div class="buttonAction">
+                <button>Tambah Transaksi</button>
+              </div>
+            </form>
+          </div>
         </div>
+        <div class="informationBudget"></div>
       </div>
     </div>
+
+    <script src="../javascript/services.js"></script>
   </body>
 </html>
